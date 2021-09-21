@@ -42,7 +42,14 @@
             </div>
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                <form action="#">
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <div class="form-control">
+                        <input type="hidden" name="form-name" value="contact">
+                    </div>
+                    <div class="hidden">
+                        <label for=""></label>
+                        <input name="bot-field">
+                    </div>
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
